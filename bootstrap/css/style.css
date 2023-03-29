@@ -30,6 +30,7 @@
 
 .top-nav {
     padding: 0 15px;
+    background-color: #08645C;
 }
 
 .top-nav>li {
@@ -50,7 +51,7 @@
 .top-nav>.open>a:hover,
 .top-nav>.open>a:focus {
     color: #fff;
-    background-color: #1a242f;
+    background-color:#08645C;
 }
 
 .top-nav>.open>.dropdown-menu {
@@ -82,7 +83,7 @@
         border-radius: 0;
         border-top: 1px rgba(0,0,0,.5) solid;
         overflow-y: auto;
-        background-color: #222;
+        background-color: #08645C;
         /*background-color: #5A6B7D;*/
         bottom: 0;
         overflow-x: hidden;
@@ -97,7 +98,7 @@
     .side-nav li a:hover,
     .side-nav li a:focus {
         outline: none;
-        background-color: #1a242f !important;
+        background-color: #08645C !important;
     }
 }
 
@@ -140,4 +141,8 @@
 
 .navbar-brand {
     padding: 5px 15px;
+}
+
+.collapse >div{
+    background-color: #08645C;
 }
