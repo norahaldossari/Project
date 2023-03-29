@@ -143,6 +143,6 @@
     padding: 5px 15px;
 }
 
-.collapse >div{
-    background-color: #08645C;
+.navbar-inverse .navbar-nav>li>a {
+    color: #fff;
 }
