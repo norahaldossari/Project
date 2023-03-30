@@ -6,8 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
     <link rel="stylesheet" href="bootstrap/css/style.css">
+    <link rel="stylesheet" href="style-forms.css">
      
-    <title>Projects</title>
+    <title>Add user</title>
 </head>
 <body>
     <div id="throbber" style="display:none; min-height:120px;"></div>
@@ -73,91 +74,50 @@
 
 
 
-        <!--Table -->
+        <!--Form -->
 
-    <div id="page-wrapper">
         <div class="container-fluid">
+          <div class="container">
+            
+                  
+                      <div class="panel-heading">
+                          <h1>اضافة عضو جديد </h1>
+                          </div>
+                          <div class="panel-body">
+                            <form>
+                              <div class="form-group ">
+                                  <label for="name" >الاسم  </label>
+                                  <input type="text"class="form-control" id="name" required/>
+                              </div>
+                              
+                              <div class="form-group">
+                                  <label for="phone">رقم الجوال</label>
+                                  <input type="text"class="form-control" id="phone" required/>
+                              </div> 
+                               
+                              <div class="form-group">
+                                  <label for="Departmeant"> القسم</label>
+                                  <input type="text"class="form-control" id="Departmeant" required/>
+                              </div>
+                              
+                              <div class="form-group">
+                                <label for="Email"> البريد الاكتروني</label>
+                                <input type="email"class="form-control" id="Email" required/>
+                            </div> 
+                            <div class="form-group">
+                                <label for="Jobtitlt"> المسمى الوظيفي</label>
+                                <input type="text"class="form-control" id="Jobtitlt" required/>
+                            </div>
+                             <input type="submit"  value="ارسال" class="btn"  />
+                                
+                            </form>
+                          </div>
+                    
+          </div>
+          </div>
 
      
-       <!-- Search box -->
-<form class="form-inline d-flex justify-content-center md-form form-sm mt-0">
-    <i class="fa fa-search" aria-hidden="true"></i>
-    <input class="form-control form-control-sm ml-3 w-75" type="text" placeholder="Search"
-      aria-label="Search">
-  </form>
-
-            <!-- Page Heading -->
-            <table class="table table-striped table-hover center" id="ProjectsTable"  cellspacing="0" width="100%">
-                <thead >
-                  <tr class="center">
-                    <th scope="col">#</th>
-                    <th scope="col">الأسم</th>
-                    <th scope="col">اسم المشروع</th>
-                    <th scope="col">القسم</th>
-                    <th scope="col">تاريخ الإنشاء</th>
-                    <th scope="col">تاريخ الإنتهاء</th>
-                    <th scope="col">المبرمج</th>
-                    <th scope="col"> المبرمج المساند</th>
-                    <th scope="col"> حالة المشروع</th>
-                    <th scope="col"> ملاحظات</th>
-                    <th scope="col"> تفاصيل</th>
-
-                  </tr>
-                </thead>
-              
-              
-                <tbody class="center">
-                  <tr>
-                    <th scope="row">1</th>
-                    <td>ريم المنيع</td>
-                    <td>المشروع الاول </td>
-                    <td>قسم التقنية</td>
-                    <td>10-9-2022 </td>
-                    <td>5-10-2022</td>
-                    <td> لمى</td>
-                    <td> نورة</td>
-                    <td>مكتمل</td>
-                    <td>ملاحظات للبرنامج </td>
-                    <td><a href="#" class="btn btn-success" >عرض</a></td>
-
-
-                  </tr>
-                  <tr>
-                    <th scope="row">2</th>
-                    <td>نورة الدوسري</td>
-                    <td>المشروع الثاني</td>
-                    <td>قسم التقنية</td>
-                    <td>10-9-2022 </td>
-                    <td>5-10-2022</td>
-                    <td> لمى</td>
-                    <td> ريم</td>
-                    <td >قيد التنفيذ</td>
-                    <td>ملاحظات للبرنامج </td>
-                    <td><a href="#" class="btn btn-success">عرض</a></td>
-
-                  </tr>
-                  <tr>
-                    <th scope="row">3</th>
-                    <td>لمى الحربي </td>
-                    <td>المشروع الثالث</td>
-                    <td>قسم التقنية</td>
-                    <td>10-9-2022 </td>
-                    <td>5-10-2022</td>
-                    <td> ريم</td>
-                    <td> نورة</td>
-                    <td>مغلق</td>
-                    <td>ملاحظات للبرنامج </td>
-                    <td><a href="#" class="btn btn-success">عرض</a></td>
-                    
-                  </tr>
-                </tbody>
-              </table>
-              <a href="#"  class="btn btn-light">عرض الكل</a>
-            </div>
-
-        </div>
-    </div>
-</div>
+      
 
 </body>
 <script src="bootstrap/js/jquery-3.6.4.min.js"></script>
