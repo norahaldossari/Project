@@ -1,0 +1,230 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
+    <meta name="generator" content="Hugo 0.84.0">
+    <title>المشاريع قيد التنفيذ</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.rtl.min.css" integrity="sha384-DOXMLfHhQkvFFp+rWTZwVlPVqdIhpDVYT9csOnHSgWQWPX0v5MCGtjCJbY6ERspU" crossorigin="anonymous">
+    <!-- Option 1: Include in HTML -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
+    <!--  CSS -->
+       <link rel="stylesheet" href="./dashboard.rtl.css">
+    <!-- link css for dataTable -->
+    <link rel="stylesheet" href="https://cdn.datatables.net/1.13.4/css/dataTables.bootstrap5.min.css">
+
+
+    <style>
+      .bd-placeholder-img {
+        font-size: 1.125rem;
+        text-anchor: middle;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        user-select: none;
+      }
+
+      @media (min-width: 768px) {
+        .bd-placeholder-img-lg {
+          font-size: 3.5rem;
+        }
+      }
+      .nav-link {
+        color:aliceblue;
+      }
+      .nav-link:hover {
+        
+        background-color:rgb(47, 105, 96);
+        color: rgb(255, 255, 255);
+      }
+      
+      
+    </style>
+
+    
+    <!-- Custom styles for this template -->
+    
+  </head>
+  <body>
+    
+<header class="navbar navbar-dark sticky-top bg-dark flex-md-nowrap p-0 shadow">
+  <img src="./bootstrap/site/static/docs/5.2/assets/img/logo1.png" alt="LOGO" width="120" height="50"   style="margin-right: 15px;"  >
+  
+  <button class="navbar-toggler position-absolute d-md-none collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#sidebarMenu" aria-controls="sidebarMenu" aria-expanded="false" aria-label="عرض/إخفاء لوحة التنقل">
+  <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="navbar-nav">
+    <div class="nav-item text-nowrap">
+      <a class="nav-link px-3" href="sign-in.html">تسجيل الخروج</a>
+    </div>
+  </div>
+</header>
+
+<div class="container-fluid">
+  <div class="row">
+    <nav id="sidebarMenu" class="col-md-3 col-lg-2 d-md-block bg-dark sidebar collapse">
+      <div class="position-sticky pt-3">
+        <ul class="nav flex-column">
+          <li class="nav-item">
+            <a class="nav-link " aria-current="page" href="#">
+              <span data-feather="home"></span>
+              لوحة القيادة
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">
+              <span data-feather="file"></span>
+              الطلبات
+            </a>
+          </li>
+          
+          <li class="nav-item">
+            <a class="nav-link" data-bs-toggle="collapse" href="#collapseProjects" aria-expanded="false" aria-controls="collapseProjects">
+              <i class="bi bi-folder2-open"></i>  المشاريع<i class="bi-caret-down float-sm-end"></i>
+            </a>
+          </li>
+          <ul class="collapse" id="collapseProjects">
+            <li class="nav-item">
+              <i class="bi bi-people-fill"></i>
+              <a class="nav-link" href="complet_project.html">
+                <span data-feather="users"></span>
+                <i class="bi bi-check-circle"></i>    المشاريع المكتملة
+              </a>
+              
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="underway_project.html">
+                <span data-feather="bar-chart-2"></span>
+                <i class="bi bi-list"></i>  المشاريع قيد التنفيذ
+              </a>
+            
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="closed_Projects.html">
+                <span data-feather="layers"></span>
+                <i class="bi bi-x-circle"></i>  المشاريع المتوقفة
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="projects.html">
+                <span data-feather="layers"></span>
+                <i class="bi bi-folder-symlink"></i>  جميع المشاريع 
+              </a>
+            </li>
+          </ul>
+        <li class="nav-item">
+          <a class="nav-link" data-bs-toggle="collapse" href="#collapseMember" aria-expanded="false" aria-controls="collapseProjects">
+            <i class="bi bi-person-fill"></i> الأعضاء <i class="bi-caret-down float-sm-end"></i>
+          </a>
+        </li>
+        <ul class="collapse" id="collapseMember">
+          <li class="nav-item">
+            <a class="nav-link" href="AddUser.html">
+              <span data-feather="bar-chart-2"></span>
+              <i class="bi bi-person-plus-fill"></i>   اضافة عضو جديد
+            </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="All_Users.html">
+                <span data-feather="bar-chart-2"></span>
+                <i class="bi bi-people-fill"></i>   جميع الأعضاء
+              </a>
+              </li>
+        </ul>
+      </ul>
+
+      </div>
+    </nav>
+
+    <main class="col-md-9 ms-sm-auto col-lg-10 px-md-4">
+        <div class="d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center pt-3 pb-2 mb-3 border-bottom">
+          <h1 class="h2"> المشاريع قيد التنفيذ</h1>
+          
+        </div>
+  
+  
+      
+        <div class="table-responsive">
+          <table id="example" class="table table-striped" style="width:100%" >
+              <thead>
+                <tr class="center">
+                  <th scope="col">#</th>
+                  <th scope="col">الأسم</th>
+                  <th scope="col">اسم المشروع</th>
+                  <th scope="col">القسم</th>
+                  <th scope="col">تاريخ الإنشاء</th>
+                  <th scope="col">تاريخ الإنتهاء</th>
+                  <th scope="col">المبرمج</th>
+                  <th scope="col"> المبرمج المساند</th>
+                  <th scope="col"> حالة المشروع</th>
+                  <th scope="col"> تفاصيل</th>
+  
+                </tr>
+              </thead>
+            
+            
+              <tbody class="center">
+                <tr>
+                  <th scope="row">1</th>
+                      <td>نورة الدوسري</td>
+                      <td>المشروع الثاني</td>
+                      <td>قسم التقنية</td>
+                      <td>10-9-2022 </td>
+                      <td>5-10-2022</td>
+                      <td> لمى</td>
+                      <td> ريم</td>
+                      <td><span class="badge text-bg-warning">قيد التنفيذ</span></td>
+                      <td><a href="#" type="button"class="btn btn-light">عرض</a></td>
+  
+  
+                </tr>
+               
+                <tr>
+                  <th scope="row">2</th>
+                  <td>ساره</td>
+                  <td>المشروع السابع</td>
+                  <td>قسم التقنية</td>
+                  <td>10-9-2022 </td>
+                  <td>5-10-2022</td>
+                  <td> ريم</td>
+                  <td> نورة</td>
+                  <td><span class="badge text-bg-warning">قيد التنفيذ</span></td>
+                  <td><a href="#" type="button"class="btn btn-light">عرض</a></td>
+                  
+                </tr> 
+               
+                <tr>
+                  <th scope="row">3</th>
+                  <td>لمى</td>
+                  <td>المشروع الثامن</td>
+                  <td>قسم التقنية</td>
+                  <td>10-9-2022 </td>
+                  <td>5-10-2022</td>
+                  <td> ريم</td>
+                  <td> نورة</td>
+                  <td><span class="badge text-bg-warning">قيد التنفيذ</span></td>
+                  <td><a href="#" type="button"class="btn btn-light">عرض</a></td>
+              </tr>
+              </tbody>
+            </table>
+    <!-- link js for dataTable -->
+    <script src=" https://code.jquery.com/jquery-3.5.1.js"></script> 
+    <script src="https://cdn.datatables.net/1.13.4/js/jquery.dataTables.min.js"></script>
+    <script src=" https://cdn.datatables.net/1.13.4/js/dataTables.bootstrap5.min.js"></script>
+    <script>
+      $(document).ready(function () {
+      $('#example').DataTable();
+      });
+     </script>
+      </div>
+    </main>
+  </div>
+</div>
+
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+
+
+  </body>
+</html>
