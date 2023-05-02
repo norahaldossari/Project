@@ -1,0 +1,175 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
+    <meta name="generator" content="Hugo 0.84.0">
+    <title> الرئيسية</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.rtl.min.css" integrity="sha384-DOXMLfHhQkvFFp+rWTZwVlPVqdIhpDVYT9csOnHSgWQWPX0v5MCGtjCJbY6ERspU" crossorigin="anonymous">
+    <!-- Option 1: Include in HTML -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
+    <!-- Bootstrap core CSS -->
+       <link rel="stylesheet" href="./dashboard.rtl.css">
+
+
+    <style>
+      .bd-placeholder-img {
+        font-size: 1.125rem;
+        text-anchor: middle;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        user-select: none;
+      }
+
+      @media (min-width: 768px) {
+        .bd-placeholder-img-lg {
+          font-size: 3.5rem;
+        }
+      }
+      .nav-link {
+        color:aliceblue;
+      }
+
+      .nav-link:hover {
+        
+        background-color:rgb(16, 79, 87);
+        color: gray;
+      }
+      
+      
+    </style>
+    
+    <!-- Custom styles for this template -->
+    
+  </head>
+  <body>
+    
+<header class="navbar navbar-dark sticky-top bg-dark flex-md-nowrap p-0 shadow">
+  <img src="./bootstrap/site/static/docs/5.2/assets/img/logo1.png" alt="LOGO" width="120" height="50"   style="margin-right: 15px;"  >
+  
+  <button class="navbar-toggler position-absolute d-md-none collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#sidebarMenu" aria-controls="sidebarMenu" aria-expanded="false" aria-label="عرض/إخفاء لوحة التنقل">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="navbar-nav">
+    <div class="nav-item text-nowrap">
+      <a class="nav-link px-3" href="sign-in.html">تسجيل الخروج</a>
+    </div>
+  </div>
+</header>
+
+<div class="container-fluid">
+  <div class="row">
+    <nav id="sidebarMenu" class="col-md-3 col-lg-2 d-md-block bg-dark sidebar collapse">
+      <div class="position-sticky pt-3">
+        <ul class="nav flex-column">
+          <li class="nav-item">
+            <a class="nav-link" aria-current="page" href="#">
+              <span data-feather="home"></span>
+              <i class="bi bi-house-door-fill"></i>
+              لوحة القيادة
+            </a>
+          </li>
+          
+          <li class="nav-item">
+            <a class="nav-link" data-bs-toggle="collapse" href="#collapseRequset" aria-expanded="false" aria-controls="collapseRequset">
+              <i class="bi bi-file-earmark"></i>  الطلبات  <i class=" bi-caret-down float-sm-end"></i>
+            </a>
+          </li>
+         <ul class="collapse"  id="collapseRequset">
+            <li class="nav-item">
+                <a class="nav-link" href="NewRequset.html">
+                  <i class="bi bi-plus-circle"></i> طلب جديد
+                </a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="ClientRequset.html">
+                    <i class="bi bi-file-earmark-text"></i> جميع الطلبات 
+                  </a>
+                  </li>
+         </ul>
+        
+      </ul>
+
+      </div>
+    </nav>
+
+    <main class="col-md-9 ms-sm-auto col-lg-10 px-md-4">
+        <div class="d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center pt-3 pb-2 mb-3 border-bottom">
+         
+      </div>
+
+      <div class="profile-container">
+      <div class="row row-space-20">
+          <div class="col-md-8">
+              <div class="tab-content p-0">
+                  <div class="tab-pane active show" id="profile-about">
+      
+                  <table class="table table-profile" id="tab">
+                    <thead>
+                        <tr>
+                            <th colspan="2">تفاصيل الطلب</th>
+                        </tr>
+                    </thead>
+      
+        <tbody>
+            <tr>
+                <td class="field">الأسم الأول</td>
+                <td class="value">
+                    ريم
+                </td>
+            </tr>
+            <tr>
+                <td class="field">الأسم الأخير</td>
+                <td class="value">
+                    المنيع
+                </td>
+            </tr>
+            <tr>
+                <td class="field">رقم الجوال</td>
+                <td class="value">
+                    0591137010
+                </td>
+            </tr>
+            <tr>
+                <td class="field">اسم المشروع</td>
+                <td class="value">
+                   تعديل صفحه
+                </td>
+            </tr>
+            <tr>
+                <td class="field">القسم</td>
+                <td class="value">
+                 قسم التقنية
+                </td>
+            </tr>
+            <tr>
+                <td class="field">وصف المشروع</td>
+                <td class="value">
+                 الوصف
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <button  onclick="myApp.printTable()">
+        Print Me
+        </button>
+
+        <script>
+            let myApp = new function () {
+                this.printTable = function () {
+                    let tab = document.getElementById('tab');
+                    let win = window.open('', '', 'height=700,width=700');
+                    win.document.write(tab.outerHTML);
+                    win.document.close();
+                    win.print();
+                }
+            }
+        </script>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+</html>
+
+  </body>
+</html>
